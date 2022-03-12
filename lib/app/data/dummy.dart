@@ -229,4 +229,13 @@ class DummyData {
       {'city': 'Mohali', 'state': 'Punjab'},
     ];
   }
+
+  static List recent_search = [
+    {'title': 'Panasonic Tv'},
+    {'title': 'IPhone 13'},
+    {'title': 'Maruti Cars'},
+    {'title': '50mm Lenses'},
+    {'title': 'Video Games'},
+    {'title': 'Desktop Monitor'},
+  ];
 }

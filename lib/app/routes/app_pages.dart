@@ -7,6 +7,8 @@ import 'package:appwrite_project/app/modules/location/views/location_view.dart';
 import 'package:appwrite_project/app/modules/post/bindings/post_binding.dart';
 import 'package:appwrite_project/app/modules/post/views/categories_view.dart';
 import 'package:appwrite_project/app/modules/post/views/post_view.dart';
+import 'package:appwrite_project/app/modules/search/bindings/search_binding.dart';
+import 'package:appwrite_project/app/modules/search/views/search_view.dart';
 import 'package:appwrite_project/app/modules/splash/bindings/splash_binding.dart';
 import 'package:appwrite_project/app/modules/splash/views/splash_view.dart';
 
@@ -20,7 +22,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.SPLASH;
+  static const INITIAL = Routes.SEARCH;
 
   static final routes = [
     GetPage(
@@ -57,6 +59,11 @@ class AppPages {
       name: _Paths.LOCATION,
       page: () => LocationView(),
       binding: LocationBinding(),
+    ),
+    GetPage(
+      name: _Paths.SEARCH,
+      page: () => SearchView(),
+      binding: SearchBinding(),
     ),
   ];
 }

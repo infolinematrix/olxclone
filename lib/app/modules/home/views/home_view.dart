@@ -45,25 +45,7 @@ class HomeView extends GetView<HomeController> {
                 ],
               ),
             );
-          }
-              // () => Row(
-              //   children: [
-              //     // Obx(() {
-              //     //   if (LocationController.to.cityModel == false) {
-              //     //     return Text("sads");
-              //     //   } else {
-              //     //     return Text(
-              //     //         "${LocationController.to.cityModel.value.city}, ${LocationController.to.cityModel.value.state}");
-              //     //   }
-              //     // }),
-              //     Icon(
-              //       Icons.expand_more,
-              //       size: 32,
-              //       color: ThemeColors.appBarColorDark,
-              //     )
-              //   ],
-              // ),
-              ),
+          }),
         ),
         centerTitle: false,
         actions: [
