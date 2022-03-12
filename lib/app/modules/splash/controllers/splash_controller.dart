@@ -17,7 +17,7 @@ class SplashController extends GetxController {
     LocationModel t = await GeoLocation().getGeoLocation();
 
     location!.value = t;
-    if (location!.value.country != null) gotoHome();
+    if (location!.value.country != null) gotoAuth();
   }
 
   @override
@@ -25,5 +25,9 @@ class SplashController extends GetxController {
 
   gotoHome() async {
     await Get.toNamed(Routes.HOME);
+  }
+
+  gotoAuth() async {
+    await Get.toNamed(Routes.AUTH);
   }
 }

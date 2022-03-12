@@ -22,6 +22,10 @@ class TextStyles {
     fontSize: 14,
     fontWeight: FontWeight.w500,
   );
+  static const TextStyle primary14Bold = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.bold,
+  );
 
   static const TextStyle primary16 = TextStyle(
     fontSize: 16,

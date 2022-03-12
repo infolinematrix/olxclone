@@ -14,9 +14,9 @@ class BottomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 60.0,
+      height: 50.0,
       color: ThemeColors.backgroundColor,
-      padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+      padding: EdgeInsets.symmetric(vertical: 2.0, horizontal: 16.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -40,11 +40,11 @@ class BottomBar extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
-                  Icons.chat,
+                  Icons.search,
                   size: iconSize,
                   color: ThemeColors.labelTextColor,
                 ),
-                Text("Chat"),
+                Text("Search"),
               ],
             ),
           ),

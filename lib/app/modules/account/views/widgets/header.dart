@@ -1,3 +1,5 @@
+import 'package:appwrite_project/app/modules/auth/controllers/auth_controller.dart';
+import 'package:appwrite_project/utils/geo_location.dart';
 import 'package:appwrite_project/utils/index.dart';
 import 'package:flutter/material.dart';
 
@@ -45,7 +47,8 @@ class HeaderWidget extends StatelessWidget {
                 "Subha Sundar Das",
                 style: Theme.of(context).textTheme.headline6,
               ),
-              Text("9832893116 - Champasari, Siliguri"),
+              Text(
+                  "${AuthController.mobile} - ${GeoLocation.location.city}, ${GeoLocation.location.state}"),
             ],
           ),
           Spacer(),

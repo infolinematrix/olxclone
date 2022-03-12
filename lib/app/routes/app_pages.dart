@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import 'package:appwrite_project/app/modules/auth/bindings/auth_binding.dart';
+import 'package:appwrite_project/app/modules/auth/views/auth_view.dart';
 import 'package:appwrite_project/app/modules/post/bindings/post_binding.dart';
 import 'package:appwrite_project/app/modules/post/views/categories_view.dart';
 import 'package:appwrite_project/app/modules/post/views/post_view.dart';
@@ -43,6 +45,11 @@ class AppPages {
       name: _Paths.SPLASH,
       page: () => SplashView(),
       binding: SplashBinding(),
+    ),
+    GetPage(
+      name: _Paths.AUTH,
+      page: () => AuthView(),
+      binding: AuthBinding(),
     ),
   ];
 }

@@ -27,14 +27,33 @@ class Style {
           fontWeight: FontWeight.w500,
         ),
         iconTheme: IconThemeData(color: Colors.black)),
+    // inputDecorationTheme: InputDecorationTheme(
+    //   focusColor: Colors.grey,
+    //   fillColor: Colors.grey.shade100,
+    //   filled: true,
+    //   labelStyle: TextStyle(
+    //     color: Colors.black54,
+    //   ),
+    //   floatingLabelStyle: TextStyle(fontWeight: FontWeight.bold),
+    // ),
     inputDecorationTheme: InputDecorationTheme(
-      focusColor: Colors.grey,
-      fillColor: Colors.grey.shade100,
+      focusColor: ThemeColors.borderColorEnable,
+      fillColor: Color.fromARGB(255, 255, 254, 254),
       filled: true,
       labelStyle: TextStyle(
         color: Colors.black54,
       ),
       floatingLabelStyle: TextStyle(fontWeight: FontWeight.bold),
+      enabledBorder: OutlineInputBorder(
+        borderSide:
+            BorderSide(color: ThemeColors.borderColorEnable, width: 1.0),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide(
+          color: ThemeColors.borderColorEnable,
+          width: 2.0,
+        ),
+      ),
     ),
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       elevation: 2,

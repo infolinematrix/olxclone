@@ -16,7 +16,7 @@ class AccountView extends GetView<AccountController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('AccountView'),
+        title: Text('Account'),
         centerTitle: false,
       ),
       body: SafeArea(
