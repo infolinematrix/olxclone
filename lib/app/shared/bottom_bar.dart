@@ -35,7 +35,7 @@ class BottomBar extends StatelessWidget {
             ),
           ),
           InkWell(
-            onTap: (() => null),
+            onTap: (() => Get.toNamed(Routes.SEARCH)),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
