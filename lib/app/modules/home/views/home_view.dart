@@ -11,6 +11,7 @@ import 'package:get/get.dart';
 import '../../../shared/bottom_bar.dart';
 
 import '../../../shared/post_widget.dart';
+import '../../location/controllers/location_controller.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -23,8 +24,47 @@ class HomeView extends GetView<HomeController> {
           Icons.place,
           color: Colors.black,
         ).marginOnly(left: 8.0),
-        title:
-            Text('${GeoLocation.location.city}, ${GeoLocation.location.state}'),
+        title: InkWell(
+          onTap: () {
+            Get.toNamed(Routes.LOCATION);
+          },
+          child: Obx(() {
+            return InkWell(
+              onTap: () {
+                Get.toNamed(Routes.LOCATION);
+              },
+              child: Row(
+                children: [
+                  Text(
+                      "${LocationController.to.cityModel.value.city}, ${LocationController.to.cityModel.value.state}"),
+                  Icon(
+                    Icons.expand_more,
+                    size: 32,
+                    color: ThemeColors.appBarColorDark,
+                  )
+                ],
+              ),
+            );
+          }
+              // () => Row(
+              //   children: [
+              //     // Obx(() {
+              //     //   if (LocationController.to.cityModel == false) {
+              //     //     return Text("sads");
+              //     //   } else {
+              //     //     return Text(
+              //     //         "${LocationController.to.cityModel.value.city}, ${LocationController.to.cityModel.value.state}");
+              //     //   }
+              //     // }),
+              //     Icon(
+              //       Icons.expand_more,
+              //       size: 32,
+              //       color: ThemeColors.appBarColorDark,
+              //     )
+              //   ],
+              // ),
+              ),
+        ),
         centerTitle: false,
         actions: [
           IconButton(

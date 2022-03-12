@@ -61,8 +61,9 @@ class AuthView extends GetView<AuthController> {
                 children: [
                   Card(
                     child: ListTile(
-                      onTap: () => Get.to(() => MobileLoginView(),
-                          binding: AuthBinding()),
+                      onTap: () => Get.to(
+                        () => MobileLoginView(),
+                      ),
                       leading: Icon(Icons.phone_android),
                       title: Text(
                         "Login with mobile",

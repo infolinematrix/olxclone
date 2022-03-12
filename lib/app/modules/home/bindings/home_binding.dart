@@ -1,3 +1,4 @@
+import 'package:appwrite_project/app/modules/location/controllers/location_controller.dart';
 import 'package:get/get.dart';
 
 import '../controllers/home_controller.dart';

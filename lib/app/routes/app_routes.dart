@@ -10,6 +10,7 @@ abstract class Routes {
   static const POST_CREATE = _Paths.POST_CREATE;
   static const SPLASH = _Paths.SPLASH;
   static const AUTH = _Paths.AUTH;
+  static const LOCATION = _Paths.LOCATION;
 }
 
 abstract class _Paths {
@@ -19,4 +20,5 @@ abstract class _Paths {
   static const POST_CREATE = '/post_create';
   static const SPLASH = '/splash';
   static const AUTH = '/auth';
+  static const LOCATION = '/location';
 }

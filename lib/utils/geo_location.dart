@@ -1,3 +1,4 @@
+import 'package:appwrite_project/app/modules/location/controllers/location_controller.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:appwrite_project/app/shared/dialog.dart';
 import 'package:geolocator/geolocator.dart';
@@ -60,12 +61,6 @@ class GeoLocation {
     List<Placemark> placemarks =
         await placemarkFromCoordinates(position.latitude, position.longitude);
 
-    // print(placemarks[0].toString());
-    // location!.value.country = placemarks[0].country ?? null;
-    // location!.value.state = placemarks[0].administrativeArea ?? null;
-    // location!.value.city = placemarks[0].locality ?? null;
-    // location!.value.postalCode = placemarks[0].postalCode ?? null;
-
     var t = LocationModel();
     t.country = placemarks[0].country ?? null;
     t.city = placemarks[0].locality ?? null;
@@ -73,6 +68,8 @@ class GeoLocation {
     t.state = placemarks[0].administrativeArea ?? null;
 
     if (t.country != null) GeoLocation.location = t;
+
+    LocationController.to.setCity(city: t.city!, state: t.state!);
 
     return t;
   }
@@ -83,4 +80,9 @@ class LocationModel {
   String? city;
   String? state;
   String? postalCode;
+}
+
+class CityModel {
+  String? city;
+  String? state;
 }

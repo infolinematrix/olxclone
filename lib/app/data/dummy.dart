@@ -202,4 +202,31 @@ class DummyData {
       },
     ];
   }
+
+  static locations() {
+    return [
+      //--West Bengal
+      {'city': 'Siliguri', 'state': 'West Bengal'},
+      {'city': 'Jalpaiguri', 'state': 'West Bengal'},
+      {'city': 'Alipurduar', 'state': 'West Bengal'},
+      {'city': 'Maldah', 'state': 'West Bengal'},
+      {'city': 'Raiganj', 'state': 'West Bengal'},
+      {'city': 'Kolkata', 'state': 'West Bengal'},
+      {'city': 'Howrah', 'state': 'West Bengal'},
+      //--delhi
+      {'city': 'Gandhi Nagar', 'state': 'Delhi'},
+      {'city': 'Silampur', 'state': 'Delhi'},
+      {'city': 'Durgapuri', 'state': 'Delhi'},
+      {'city': 'Counought Place', 'state': 'Delhi'},
+      {'city': 'Palika Bazar', 'state': 'Delhi'},
+      {'city': 'Mehruli', 'state': 'Delhi'},
+      //--punjab
+      {'city': 'Amritsar', 'state': 'Punjab'},
+      {'city': 'Ludhiana', 'state': 'Punjab'},
+      {'city': 'Jalandhar', 'state': 'Punjab'},
+      {'city': 'Patiala', 'state': 'Punjab'},
+      {'city': 'Bathinda', 'state': 'Punjab'},
+      {'city': 'Mohali', 'state': 'Punjab'},
+    ];
+  }
 }

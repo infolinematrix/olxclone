@@ -2,6 +2,8 @@ import 'package:get/get.dart';
 
 import 'package:appwrite_project/app/modules/auth/bindings/auth_binding.dart';
 import 'package:appwrite_project/app/modules/auth/views/auth_view.dart';
+import 'package:appwrite_project/app/modules/location/bindings/location_binding.dart';
+import 'package:appwrite_project/app/modules/location/views/location_view.dart';
 import 'package:appwrite_project/app/modules/post/bindings/post_binding.dart';
 import 'package:appwrite_project/app/modules/post/views/categories_view.dart';
 import 'package:appwrite_project/app/modules/post/views/post_view.dart';
@@ -50,6 +52,11 @@ class AppPages {
       name: _Paths.AUTH,
       page: () => AuthView(),
       binding: AuthBinding(),
+    ),
+    GetPage(
+      name: _Paths.LOCATION,
+      page: () => LocationView(),
+      binding: LocationBinding(),
     ),
   ];
 }
